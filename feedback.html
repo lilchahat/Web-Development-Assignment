@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Feedback Form</title>
+  </head>
+  <body>
+    <h2>Feedback Form</h2>
+
+    <form>
+      <label for="fullname">Full Name:</label><br />
+      <input
+        type="text"
+        id="fullname"
+        name="fullname"
+        placeholder="Enter your full name"
+        minlength="3"
+        required
+      />
+      <br /><br />
+
+      <label for="email">Email Address:</label><br />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="example@email.com"
+        required
+      />
+      <br /><br />
+
+      <h3>Rating</h3>
+
+      <input
+        type="radio"
+        id="verysatisfied"
+        name="rating"
+        value="Very Satisfied"
+        required
+      />
+      <label for="verysatisfied">Very Satisfied</label><br />
+
+      <input type="radio" id="satisfied" name="rating" value="Satisfied" />
+      <label for="satisfied">Satisfied</label><br />
+
+      <input type="radio" id="neutral" name="rating" value="Neutral" />
+      <label for="neutral">Neutral</label><br />
+
+      <input type="radio" id="unsatisfied" name="rating" value="Unsatisfied" />
+      <label for="unsatisfied">Unsatisfied</label><br /><br />
+
+      <h3>Interests</h3>
+
+      <input
+        type="checkbox"
+        id="webdev"
+        name="interest"
+        value="Web Development"
+      />
+      <label for="webdev">Web Development</label><br />
+
+      <input
+        type="checkbox"
+        id="mobiledev"
+        name="interest"
+        value="Mobile Development"
+      />
+      <label for="mobiledev">Mobile Development</label><br />
+
+      <input
+        type="checkbox"
+        id="ai"
+        name="interest"
+        value="AI & Machine Learning"
+      />
+      <label for="ai">AI & Machine Learning</label><br /><br />
+
+      <label for="country">Country:</label><br />
+      <select id="country" name="country" required>
+        <option value="">Select a Country</option>
+        <option value="Nepal">Nepal</option>
+        <option value="India">India</option>
+        <option value="USA">United States</option>
+      </select>
+      <br /><br />
+
+      <label for="feedback">Write your feedback here:</label><br />
+      <textarea
+        id="feedback"
+        name="feedback"
+        rows="5"
+        cols="40"
+        placeholder="Write your feedback here"
+        maxlength="500"
+        required
+      ></textarea>
+      <br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
